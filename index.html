@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./csschatbox/chat.css">
     <link rel="stylesheet" href="./popveri.css">
     <link rel="stylesheet" href="./popform.css">
+    <link rel="stylesheet" href="./poplermais.css">
     <title>Samu Conect</title>
   </head>
   <body>
@@ -82,7 +83,6 @@
             </div>
           </form>
 
-          <script src="./scripts/formpop.js"></script>
           <script src="./scripts/validarcpf.js"></script>
           <div id="verificationResult"></div>
         </div>
@@ -129,6 +129,18 @@
           </p>
         </div>
         <button class="service__btn">Ler Mais</button>
+
+        <script src="./scripts/popinfomais.js"></script>
+      </div>
+
+      <div id="moreInfoPopup" class="popup-overlai" style="display: none;">
+        <div class="popup-contenti">
+          <h3>Mais Informações</h3>
+          <p>Em situações de emergência, é fundamental manter a calma e agir rapidamente para garantir a segurança da vítima até que o atendimento especializado chegue. <br> No caso de parada cardiorrespiratória, inicie compressões no tórax da pessoa, pressionando com força e ritmo constante. <br> Para engasgos, aplique a manobra de Heimlich ou, em bebês, utilize tapas nas costas e compressões no peito. <br> Se houver sangramento intenso, pressione o local com um pano limpo para controlar a hemorragia. <br>
+            Em queimaduras, lave a área com água em temperatura ambiente e cubra com um pano limpo, evitando qualquer substância inadequada. <br> Durante convulsões, proteja a vítima, deite-a de lado e evite segurar ou colocar algo em sua boca. <br> Se houver suspeita de fratura, imobilize o membro afetado sem movimentá-lo. <br> Em casos de choque elétrico, desligue a fonte de energia ou afaste a pessoa usando objetos não condutores. <br>
+            Acima de tudo, entre em contato com o SAMU pelo número 192, fornecendo informações claras sobre o ocorrido e o estado da vítima, garantindo que o socorro seja ágil e eficaz.</p>
+          <button  onclick="closeMoreInfoPopup()">Fechar</button>
+        </div>
       </div>
 
       <div class="service__grid">
