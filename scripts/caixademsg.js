@@ -18,19 +18,21 @@ function toggleChat() {
             console.error("Função displayDataInChatbox não definida.");
         }
     }
-}
 
-function cancelarEmergencia() {
-    // Sua lógica existente para cancelar a emergência
-
-    // Limpar o cache da database
-    if ('caches' in window) {
-        caches.keys().then(function(names) {
-            for (let name of names) {
-                caches.delete(name);
-            }
-        });
+    function cancelarEmergencia() {
+        // Sua lógica existente para cancelar a emergência
+    
+        // Limpar o cache da database
+        if ('caches' in window) {
+            caches.keys().then(function(names) {
+                for (let name of names) {
+                    caches.delete(name);
+                }
+            });
+        }
+    
+        // Limpar o console
+        console.clear();
+        console.log("Cache da database e console limpos.");
     }
-
-    console.log("Cache da database limpo.");
 }

@@ -91,6 +91,12 @@ request.onsuccess = function(event) {
             console.log("Erro ao remover os dados: ", event.target.error);
         };
     };
+
+    
+    document.getElementById("nome").addEventListener("input", function(event) {
+        let nomeInput = event.target.value;
+        event.target.value = nomeInput.replace(/[^a-zA-Z\s]/g, '');
+    });
 };
 
 request.onerror = function(event) {

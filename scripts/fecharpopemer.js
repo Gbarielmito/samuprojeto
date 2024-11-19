@@ -40,3 +40,4 @@ function closeVerificationPopup(event) {
         console.error("Element with ID 'overlayVerification' not found.");
     }
 }
+

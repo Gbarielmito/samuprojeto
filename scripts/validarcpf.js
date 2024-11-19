@@ -1,3 +1,17 @@
+document.getElementById('verificationForm').addEventListener('submit', verificarFormulario);
+
+document.getElementById('fullName').addEventListener('input', function(event) {
+    this.value = this.value.replace(/\d/g, '');
+});
+
+document.getElementById('age').addEventListener('input', function(event) {
+    this.value = this.value.replace(/\D/g, '');
+});
+
+document.getElementById('phone').addEventListener('input', function(event) {
+    this.value = this.value.replace(/\D/g, '');
+});
+
 function openPopup() {
     document.getElementById("popupForm").style.display = "block";
     document.getElementById("overlay").style.display = "block";
@@ -67,5 +81,3 @@ function verificarFormulario(event) {
     // Se tudo estiver correto, abre o popup
     openPopup();
 }
-
-document.getElementById('verificationForm').addEventListener('submit', verificarFormulario);
