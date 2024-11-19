@@ -39,6 +39,25 @@ function verificarFormulario(event) {
         return;
     }
 
+    // Verifica se a idade contém apenas números
+    if (!/^\d+$/.test(age)) {
+        alert('Idade inválida! Por favor, insira uma idade válida.');
+        return;
+    }
+
+    // Converte a idade para inteiro e valida
+    const ageInt = parseInt(age, 10);
+    if (isNaN(ageInt) || ageInt < 0 || ageInt > 99) {
+        alert('Idade inválida! Por favor, insira uma idade válida.');
+        return;
+    }
+
+    // Verifica se o telefone contém apenas números
+    if (!/^\d+$/.test(phone)) {
+        alert('Telefone inválido! Por favor, insira um telefone válido.');
+        return;
+    }
+
     // Valida o CPF
     if (!validaCPF(cpf)) {
         alert('CPF inválido!');
