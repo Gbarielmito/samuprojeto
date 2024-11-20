@@ -135,11 +135,12 @@
 
       <div id="moreInfoPopup" class="popup-overlai" style="display: none;">
         <div class="popup-contenti">
+          <span><i class="ri-error-warning-line"></i></span>
           <h3>Mais Informações</h3>
           <p>Em situações de emergência, é fundamental manter a calma e agir rapidamente para garantir a segurança da vítima até que o atendimento especializado chegue. <br> No caso de parada cardiorrespiratória, inicie compressões no tórax da pessoa, pressionando com força e ritmo constante. <br> Para engasgos, aplique a manobra de Heimlich ou, em bebês, utilize tapas nas costas e compressões no peito. <br> Se houver sangramento intenso, pressione o local com um pano limpo para controlar a hemorragia. <br>
             Em queimaduras, lave a área com água em temperatura ambiente e cubra com um pano limpo, evitando qualquer substância inadequada. <br> Durante convulsões, proteja a vítima, deite-a de lado e evite segurar ou colocar algo em sua boca. <br> Se houver suspeita de fratura, imobilize o membro afetado sem movimentá-lo. <br> Em casos de choque elétrico, desligue a fonte de energia ou afaste a pessoa usando objetos não condutores. <br>
             Acima de tudo, entre em contato com o SAMU pelo número 192, fornecendo informações claras sobre o ocorrido e o estado da vítima, garantindo que o socorro seja ágil e eficaz.</p>
-          <button  onclick="closeMoreInfoPopup()">Fechar</button>
+          <button onclick="closeMoreInfoPopup()">Fechar</button>
         </div>
       </div>
 
@@ -151,8 +152,18 @@
            <p>Queimadura de Primeiro Grau: Resfrie a área com água corrente por 10-20 minutos. Evite gelo, pois pode agravar a lesão.</p>
            <p>Queimadura Grave: Não retire roupas grudadas na pele e cubra a área com um pano limpo até o atendimento.</p>
           
-          <a href="#">Ler Mais</a>
+           <button class="service__btndois">Ler Mais</button>
+           <script src="./scripts/popumler.js"></script>
         </div>
+
+        <div id="moreInfoPopupdois" class="popup-overlay" style="display: none;">
+          <div class="popup-content">
+            <h3>Mais Informações</h3>
+            <p>Aqui estão mais informações sobre os serviços de primeiros socorros...</p>
+            <button onclick="closeMoreInfoPopup()">Fechar</button>
+          </div>
+        </div>
+
         <div class="service__card">
           <span><i class="ri-service-line"></i></span>
           <h4>Parada Cardiorrespiratória</h4>
