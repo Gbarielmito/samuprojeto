@@ -12,6 +12,10 @@ document.getElementById('phone').addEventListener('input', function(event) {
     this.value = this.value.replace(/\D/g, '');
 });
 
+document.getElementById('cpf').addEventListener('input', function(event) {
+    this.value = this.value.replace(/\D/g, '');
+});
+
 function openPopup() {
     document.getElementById("popupForm").style.display = "block";
     document.getElementById("overlay").style.display = "block";

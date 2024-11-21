@@ -1,6 +1,7 @@
 function openPopup() {
     document.getElementById("popupForm").style.display = "block";
     document.getElementById("overlay").style.display = "block";
+    
 }
 
 
@@ -40,4 +41,6 @@ function closeVerificationPopup(event) {
         console.error("Element with ID 'overlayVerification' not found.");
     }
 }
+
+
 

@@ -21,7 +21,7 @@
         <ul class="nav__links">
           <li class="link"><a href="#home">Inicio</a></li>
           <li class="link"><a href="#about">Quem somos</a></li>
-          <li class="link"><a href="#service">Serviços</a></li>
+          <li class="link"><a href="#servi">Serviços</a></li>
         </ul>
           <button class="btn" onclick="openPopup()">Emergência</button>
   
@@ -129,8 +129,6 @@
           </p>
         </div>
         <button class="service__btn">Ler Mais</button>
-
-        <script src="./scripts/popinfomais.js"></script>
       </div>
 
       <div id="moreInfoPopup" class="popup-overlai" style="display: none;">
@@ -153,14 +151,14 @@
            <p>Queimadura Grave: Não retire roupas grudadas na pele e cubra a área com um pano limpo até o atendimento.</p>
           
            <button class="service__btndois">Ler Mais</button>
-           <script src="./scripts/popumler.js"></script>
         </div>
 
-        <div id="moreInfoPopupdois" class="popup-overlay" style="display: none;">
-          <div class="popup-content">
-            <h3>Mais Informações</h3>
-            <p>Aqui estão mais informações sobre os serviços de primeiros socorros...</p>
-            <button onclick="closeMoreInfoPopup()">Fechar</button>
+        <div id="moreInfoPopupdois" class="popup-overlai" style="display: none;">
+          <div class="popup-contenti">
+            <span><i class="ri-fire-line"></i></span>
+            <h3>Qeuimaduras</h3>
+            <p>Queimaduras exigem cuidados imediatos para minimizar danos. Em casos de queimaduras térmicas, lave a área com água corrente fria por 10-20 minutos, sem usar gelo, e cubra com gaze limpa para evitar infecções, deixando bolhas intactas. Em queimaduras químicas, remova a substância com água abundante e retire roupas contaminadas, protegendo a área. Queimaduras elétricas requerem desligar a fonte de energia antes de tocar na vítima e buscar atendimento médico imediato, pois podem causar danos internos. Para queimaduras solares, resfrie a pele com compressas frias, hidrate com loções e beba bastante água. Nunca aplique produtos caseiros como manteiga ou pasta de dente e procure um médico se a queimadura for grave, afetar áreas sensíveis ou apresentar sinais de infecção. Agir rápido é essencial para aliviar a dor e proteger a pele.</p>
+            <button onclick="closeMoreInfoPopupdois()">Fechar</button>
           </div>
         </div>
 
@@ -170,8 +168,19 @@
           <p>
             Verifique se a pessoa responde e se está respirando. Caso contrário, inicie a RCP. A sequência é 30 compressões no peito seguidas de 2 insuflações (ventilação boca a boca).
           </p>
-          <a href="#">Ler Mais</a>
+          <button class="service__btntres">Ler Mais</button>
         </div>
+
+        <div id="moreInfoPopuptres" class="popup-overlai" style="display: none;">
+          <div class="popup-contenti">
+            <span><i class="ri-service-line"></i></span>
+            <h3>Parada Cardiorrespiratória</h3>
+            <p>
+              Em caso de parada cardíaca, agir rapidamente é essencial para aumentar as chances de sobrevivência. Primeiro, verifique se a pessoa responde e respira; caso contrário, chame imediatamente os serviços de emergência e comece a reanimação cardiopulmonar (RCP). Posicione as mãos no centro do tórax da vítima e faça compressões firmes e rápidas, mantendo um ritmo de 100 a 120 compressões por minuto, permitindo que o tórax retorne à posição normal entre as compressões. Se possível, utilize um desfibrilador externo automático (DEA) assim que disponível, seguindo as instruções do aparelho. Continue a RCP até que a pessoa volte a respirar ou que os serviços médicos assumam o atendimento. Evite perder tempo com verificações desnecessárias e concentre-se em manter o fluxo sanguíneo com compressões constantes.</p>
+            <button onclick="closeMoreInfoPopuptres()">Fechar</button>
+          </div>
+        </div>
+
         <div class="service__card">
           <span><i class="ri-lungs-line"></i></span>
           <h4>Emergências Respiratórias</h4>
@@ -179,16 +188,38 @@
            <p> Engasgo: Se alguém estiver engasgado, incentive a pessoa a tossir. Se isso não funcionar e a pessoa estiver consciente, realize a Manobra de Heimlich.</p>
            <p> Parada Respiratória: Se a pessoa não estiver respirando, inicie a RCP (ressuscitação cardiopulmonar). Posicione suas mãos sobre o peito da vítima e faça compressões fortes e rápidas.</p>
           
-          <a href="#">Ler Mais</a>
+           <button class="service__btnquatro">Ler Mais</button>
         </div>
+
+        <div id="moreInfoPopupquatro" class="popup-overlai" style="display: none;">
+          <div class="popup-contenti">
+            <span><i class="ri-lungs-line"></i></span>
+            <h3>Emergências Respiratórias</h3>
+            <p>
+              Em emergências respiratórias, como dificuldade para respirar, agir rapidamente é crucial. Verifique se a pessoa está consciente e procure sinais de obstrução ou esforço respiratório. Se houver engasgo, tente estimular a tosse, e, se necessário, realize a manobra de Heimlich para desobstruir as vias aéreas. Em casos de asma ou alergia grave, ajude a administrar a medicação, como broncodilatadores ou epinefrina, se disponível. Se a pessoa parar de respirar, inicie a ventilação de resgate, inclinando a cabeça para trás, selando a boca e oferecendo respirações lentas e profundas, enquanto observa o tórax subir. Chame os serviços de emergência imediatamente em qualquer situação de respiração anormal ou ausência de respiração, mantendo a pessoa calma e em posição confortável até a chegada do socorro.</p>
+            <button onclick="closeMoreInfoPopupquatro()">Fechar</button>
+          </div>
+        </div>
+
         <div class="service__card">
-          <span><i class="ri-psychotherapy-line"></i></span>
+          <span><i class="ri-mental-health-line"></i></span>
           <h4>Crise Convulsiva</h4>
           <p>
             Deite a pessoa de lado em uma superfície segura e retire objetos ao redor. Não tente conter os movimentos nem coloque nada na boca da pessoa.
           </p>
-          <a href="#">Ler Mais</a>
+          <button class="service__btncinco">Ler Mais</button>
         </div>
+
+        <div id="moreInfoPopupcinco" class="popup-overlai" style="display: none;">
+          <div class="popup-contenti">
+            <span><i class="ri-mental-health-line"></i></span>
+            <h3>Crise Convulsiva</h3>
+            <p>
+              Em uma crise convulsiva, mantenha a calma e proteja a pessoa de lesões. Deite-a em um local seguro, afastando objetos perigosos ao redor, e coloque-a de lado para evitar sufocamento, mas sem forçar movimentos ou segurar a pessoa. Não coloque nada na boca, pois isso pode causar ferimentos. Após o fim da crise, verifique se a pessoa está respirando normalmente e ofereça conforto enquanto ela se recupera, já que a desorientação é comum. Chame os serviços de emergência se a crise durar mais de cinco minutos, se for a primeira vez, se ocorrer após um trauma ou se a pessoa não recuperar a consciência. Mantenha-se atento e esteja preparado para dar mais informações ao socorro médico.</p>
+            <button onclick="closeMoreInfoPopupcinco()">Fechar</button>
+          </div>
+        </div>
+
         <div class="service__card">
           <span><i class="ri-psychotherapy-line"></i></span>
           <h4>Desmaio</h4>
@@ -196,8 +227,18 @@
           <p>Afrouxe Roupa Apertada: Isso ajuda a melhorar a circulação.</p>
           <p>Recuperação: Quando ela acordar, deixe-a sentada devagar, evitando que se levante rapidamente.</p>
           
-          <a href="#">Ler Mais</a>
+          <button class="service__btnseis">Ler Mais</button>
         </div>
+
+        <div id="moreInfoPopupseis" class="popup-overlai" style="display: none;">
+          <div class="popup-contenti">
+            <span><i class="ri-psychotherapy-line"></i></span>
+            <h3>Desmaio</h3>
+            <p>
+              Em casos de desmaio, a prioridade é garantir a segurança da pessoa e evitar lesões. Deite-a de costas em um local seguro, elevando as pernas para melhorar o fluxo sanguíneo e prevenir a perda de consciência. Afrouxe roupas apertadas, como cintos ou gravatas, para facilitar a respiração e circulação. Mantenha a pessoa calma e confortável, evitando movimentos bruscos ou tentativas de levantar-se rapidamente. Ofereça água e alimentos leves após a recuperação, mas evite forçar a ingestão. Se o desmaio for recorrente, dura mais de um minuto ou ocorre após um trauma, procure ajuda médica para investigar a causa e receber orientações sobre prevenção. Esteja atento a sinais de alerta e mantenha a pessoa sob observação até que se sinta melhor.</p>
+            <button onclick="closeMoreInfoPopupseis()">Fechar</button>
+          </div>
+
       </div>
     </section>
     <section class="section__container about__container" id="about">
@@ -266,17 +307,48 @@
         </div>
         <div class="footer__col">
           <h4>Serviços</h4>
-          <p>Termos de pesquisa</p>
-          <p>Pesquisa avançada</p>
-          <p>Política de privacidade</p>
+          <button class="service__term">Termos de pesquisa</button>
+          <button class="service__pesq">Pesquisa avançada</button>
+          <button class="service__poli">Política de privacidade</button>
         </div>
+
+        <div id="moreInfoPopupterm" class="popup-overlai" style="display: none;">
+          <div class="popup-contenti">
+            <span><i class="ri-file-search-line"></i></span>
+            <h3>Termos de pesquisa</h3>
+            <p>
+              Aqui, oferecemos uma abordagem detalhada e completa para atender às necessidades do mercado, com foco em lhe ajudar a ter um atendimento bem mais rapido e excelência. Descubra como nossos serviços especializados, aliando tecnologia de ponta e expertise do setor, podem transformar desafios complexos em oportunidades reais em te ajudar. Navegue por nossos conteúdos, conheça nossos cases de sucesso e explore recursos desenvolvidos.</p>
+            <button onclick="closeMoreInfoPopupterm()">Fechar</button>
+          </div>
+        </div>
+
+        <div id="moreInfoPopuppesq" class="popup-overlai" style="display: none;">
+          <div class="popup-contenti">
+            <span><i class="ri-user-search-line"></i></span>
+            <h3>Pesquisas avançadas</h3>
+            <p>
+              As pesquisas avançadas realizadas pelo SAMU (Serviço de Atendimento Móvel de Urgência) buscam constantemente melhorar a qualidade do atendimento e otimizar os processos de emergência médica. Estas pesquisas incluem o desenvolvimento de novas tecnologias para a comunicação e coordenação entre equipes de resgate, aprimoramento de técnicas de triagem e atendimento no local, além da implementação de sistemas mais eficazes de transporte e acompanhamento de pacientes críticos. O objetivo é reduzir o tempo de resposta, aumentar a eficiência no tratamento e salvar mais vidas. Além disso, o SAMU investe em estudos sobre prevenção, capacitação de profissionais e avaliação contínua dos resultados para garantir que os protocolos adotados estejam sempre alinhados às melhores práticas internacionais de saúde e emergência.</p>
+            <button onclick="closeMoreInfoPopuppesq()">Fechar</button>
+          </div>
+        </div>
+
+        <div id="moreInfoPopuppoli" class="popup-overlai" style="display: none;">
+          <div class="popup-contenti">
+            <span><i class="ri-git-repository-private-line"></i></span>
+            <h3>Politica de privacidade</h3>
+            <p>
+              A política de privacidade do SAMU (Serviço de Atendimento Móvel de Urgência) visa garantir a proteção e a confidencialidade dos dados pessoais e informações dos usuários durante o atendimento de emergência. Ela define como os dados são coletados, armazenados e utilizados, assegurando que as informações compartilhadas com o SAMU sejam usadas exclusivamente para a prestação de serviços médicos e o cumprimento das obrigações legais. A política também destaca o compromisso do SAMU em respeitar a privacidade dos pacientes, com medidas de segurança para evitar o acesso não autorizado aos dados sensíveis. Além disso, a política orienta sobre o direito dos usuários de acessar, corrigir ou excluir suas informações pessoais, quando aplicável, e como podem fazer isso de maneira segura.</p>
+            <button onclick="closeMoreInfoPopuppoli()">Fechar</button>
+          </div>
+        </div>
+
         <div class="footer__col">
           <h4>Contate-nos</h4>
-          <p><i class="ri-mail-fill"></i> samu192@gmail.com</p>
-          <p><i class="ri-phone-fill"></i> 192</p>
+          <a href="email:samu192@gmail.com"><p><i class="ri-mail-fill"></i> samu192@gmail.com</p></a>
+          <a href="tel:192"><p><i class="ri-phone-fill"></i> 192</p></a>
         </div>
       </div>
-      <div class="footer__bar">
+      <div class="footer__bar" id="servi">
         <div class="footer__bar__content">
           <div class="footer__socials">
             <span><i class="ri-instagram-line"></i></span>
@@ -287,5 +359,15 @@
         </div>
       </div>
     </footer>
+
+    <script src="./scripts/popinfomais.js"></script>
+    <script src="./scripts/popumler.js"></script>
+    <script src="./scripts/popdoisler.js"></script>
+    <script src="./scripts/poptresler.js"></script>
+    <script src="./scripts/popquatroler.js"></script>
+    <script src="./scripts/popcincoler.js"></script>
+    <script src="./scripts/popterm"></script>
+    <script src="./scripts/poppesq.js"></script>
+    <script src="./scripts/poppoli.js"></script>
   </body>
 </html>

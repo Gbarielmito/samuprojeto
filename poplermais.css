@@ -16,12 +16,13 @@
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  width: 40%;
 }
 
 .popup-contenti button {
     padding: 10px 20px;
     background: rgba(18, 172, 142, 0.9);
-    width: 7%;
+    width: 11%;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -53,28 +54,163 @@
   margin-bottom: 1rem;
   padding: 10px 20px;
   font-size: 2.5rem;
-  color: #fffb00;
-  background-color: #f8f6d7;
+  color: #fff;
+  background-color: rgba(18, 172, 142, 0.9);
   border-radius: 100%;
   transition: 0.3s;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .service__btndois {
-    padding: 0.75rem 1rem;
-    outline: none;
-    font-size: 1rem;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    background-color: transparent;
-    border-radius: 5px;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: 0.3s;
-  }
+  padding: 0.75rem 1rem;
+  outline: none;
+  font-size: 1rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  border-radius: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.3s;
+}
   
-  .service__btn:hover {
-    color: var(--white);
-    background-color: var(--primary-color);
-  }
+.service__btndois:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.service__btntres {
+  padding: 0.75rem 1rem;
+  outline: none;
+  font-size: 1rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  border-radius: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.3s;
+}
+  
+.service__btntres:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.service__btnquatro {
+  padding: 0.75rem 1rem;
+  outline: none;
+  font-size: 1rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  border-radius: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.3s;
+}
+  
+.service__btnquatro:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.service__btncinco {
+  padding: 0.75rem 1rem;
+  outline: none;
+  font-size: 1rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  border-radius: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.3s;
+}
+  
+.service__btncinco:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.service__btnseis {
+  padding: 0.75rem 1rem;
+  outline: none;
+  font-size: 1rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  border-radius: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.3s;
+}
+  
+.service__btnseis:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.service__term {
+  padding: 0.50rem 1rem;
+  outline: none;
+  font-size: 1rem;
+  color: #000000;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.3s;
+}
+  
+.service__term:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.service__pesq {
+  padding: 0.50rem 1rem;
+  outline: none;
+  font-size: 1rem;
+  color: #000000;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+  
+.service__pesq:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.service__poli {
+  padding: 0.50rem 1rem;
+  outline: none;
+  font-size: 1rem;
+  color: #000000;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+  
+.service__poli:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+
+
 
 

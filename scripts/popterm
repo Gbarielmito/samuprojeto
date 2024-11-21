@@ -1,0 +1,12 @@
+function openMoreInfoPopup() {
+    document.getElementById('moreInfoPopupterm').style.display = 'flex';
+    document.body.classList.add('no-scroll');
+}
+
+function closeMoreInfoPopupterm() {
+    document.getElementById('moreInfoPopupterm').style.display = 'none';
+    document.body.classList.remove('no-scroll');
+}
+
+document.querySelector('.service__term').addEventListener('click', openMoreInfoPopup);
+document.querySelector('#moreInfoPopupterm button').addEventListener('click', closeMoreInfoPopupterm);
