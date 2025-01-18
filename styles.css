@@ -553,6 +553,12 @@ header {
   cursor: pointer;
 }
 
+.footer__socials a{
+  color: var(--white);
+}
+
+
+
 @media (width < 900px) {
   .service__grid {
     grid-template-columns: repeat(2, 1fr);
